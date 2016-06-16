@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+        <script src="https://use.fontawesome.com/d53800b945.js"></script>
+        
+        <link  rel="stylesheet" type="text/css" href="style.css">
+        
+        <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        
+        <!-- footer div, with login and register buttons -->
+        
+        <div class="col-xs-12" id="footerDiv">
+            <p class="col-xs-12 text-center">
+                To comment and save, sign in or create an account.
+            </p>
+            <div class="col-xs-4 col-xs-offset-4 text-center">
+                <button class="btn btn-default" id="signInButton" onclick="signIn()" >sign in</button>
+                <button class="btn btn-default" id="registerButton" onclick="register()">Register</button>
+            </div>
+            <div class="col-xs-1 col-xs-offset-3 text-center">
+                <button class="btn" id="closeModal" onclick="closeModal()">
+                    X
+                </button>
+            </div>
+        </div>
+        
+        
+        <!-- login div -->
+        
+        <div class="col-xs-12 col-sm-4 col-sm-offset-4" id="loginDiv">
+            <h3 class="text-center">Login <br><small>via</small></h3>
+            <p class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                or
+                <a onclick="register()">register</a>
+            </p>
+            
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 facebookButton loginButton">
+               <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                facebook
+            </button>
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 twitterButton loginButton" >
+               <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                Twitter
+            </button>
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 googleButton loginButton">
+               <i class="fa fa-google" aria-hidden="true"></i>
+                Google
+            </button>
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 githubButton loginButton">
+               <i class="fa fa-github-square" aria-hidden="true"></i>
+                Git Hub
+            </button>
+            
+            <h4 class="col-xs-12 text-center">or <br> <small>email and password</small> </h4>
+            
+            <form class="form col-xs-12 col-sm-8 col-sm-offset-2 text-center">
+                <div class="input-group text-center col-xs-12">
+                    <input class="form-control text-center" type="email" placeholder="user@example.com" />
+                </div>
+                <div class="input-group text-center col-xs-12">
+                    <input class="form-control text-center" type="password" placeholder="password" />
+                </div>
+                <button type="submit" class="btn btn-default col-xs-12">Submit</button>
+            </form>
+            
+        </div>
+        
+        
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
