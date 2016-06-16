@@ -1,3 +1,10 @@
+/* global */
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+/* ------------------------------------------------------- */
 /* footer div */
 
 #footerDiv {
@@ -19,8 +26,11 @@
     padding: 5px;
     position: fixed;
     top: 10%;
+    box-shadow: 2px 2px 5px 2px rgba(200,200,200,.5);
+    background-color: rgba(255,255,255,.5);
 }
 
+/* ------------------------------------------------------- */
 /* login buttons */
 
 .loginButton {
@@ -45,9 +55,74 @@
 }
 
 .googleButton {
-    background-color: rgba(219,50,54);
+    background-color: rgba(219,50,54,1);
 }
 
 .githubButton {
     background-color: rgba(100,100,100,1);
+}
+
+/* ------------------------------------------------------- */
+/* login text */
+
+#loginDiv h3 {
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: .8em;
+    letter-spacing: .1em;
+}
+
+#loginDiv h3 small {
+    font-size: .5em;
+}
+
+.loginOrDiv {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.loginOrDiv i {
+    font-size: 1.5em;
+    color: rgba(100,100,100,1);
+    top: .5em;;
+    position: relative;
+}
+
+
+/* ------------------------------------------------------- */
+/* email form */
+
+.emailForm {
+    background-color: rgba(255,255,255,1);
+    
+}
+
+.emailForm input {
+    margin-top: .2em;
+    margin-bottom: .2em;
+    box-shadow: 1px 5px 3px 1px rgba(200,200,200,.5);
+}
+
+.emailForm button {
+    margin-top: .2em;
+    background-color: rgba(10,150,250,1);
+    color: rgba(50,50,50,1);
+    border-color: rgba(200,200,200,.7);
+    box-shadow: 1px 5px 3px 1px rgba(200,200,200,.5);
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+.emailForm button:hover {
+    background-color: rgba(10,150,250,.5);
+}
+
+/* ------------------------------------------------------- */
+/* close x */
+
+.closeX {
+    color: rgba(50,50,50,1);
+    position:relative;
+    top: 5em;
+    left: 5em;
 }
