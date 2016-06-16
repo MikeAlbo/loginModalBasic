@@ -41,6 +41,10 @@ body {
     font-size: 1.2em;
 }
 
+.loginButton:hover {
+    background-color: rgba(250,250,250,.8);
+}
+
 .loginButton i {
     padding-right: .5em;
     
@@ -120,9 +124,11 @@ body {
 /* ------------------------------------------------------- */
 /* close x */
 
-.closeX {
-    color: rgba(50,50,50,1);
-    position:relative;
-    top: 5em;
-    left: 5em;
+.closeX i {
+    color: rgba(50,50,50,.8);
+    font-size: 1.2em;
+}
+
+.closeX i:hover {
+   color: rgba(50,50,50,.2); 
 }
