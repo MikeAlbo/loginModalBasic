@@ -22,16 +22,60 @@
                 To comment and save, sign in or create an account.
             </p>
             <div class="col-xs-4 col-xs-offset-4 text-center">
-                <button class="btn btn-default" id="signInButton" onclick="signIn()" >sign in</button>
+                <button class="btn btn-default" id="signInButton" >sign in</button>
                 <button class="btn btn-default" id="registerButton" onclick="register()">Register</button>
             </div>
             <div class="col-xs-1 col-xs-offset-3 text-center">
-                <button class="btn" id="closeModal" onclick="closeModal()">
+                <button class="btn" id="closeModal">
                     X
                 </button>
             </div>
         </div>
         
+        <div class="col-xs-12 bodyText">
+            <h1 class="text-center">Basic Login Modal using Bootstrap and jQuery</h1>
+            <p class="text-center">a basic login modal with links to social media and the opportunity to login via email and password.</p>
+            
+            <h4 class="text-center col-xs-12">The Footer Modal <br> <small>selecting wether to login or register</small></h4>
+            <ul class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <li>As a user, clicking on "sign-in" will launch the login modal.</li>
+                <li>As a user, clicking on "register" will loaunch the register modal.</li>
+                <li>As a user, clicking on the "x" button will close the login/register modal.</li>
+            </ul>
+            
+            <h4 class="text-center col-xs-12">The Login Modal</h4>
+            <ul class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <li>As a user, I can sign in via social media
+                    <ul>
+                        <li>clicking on one of the buttons will launch the apps login page</li>
+                    </ul>
+                </li>
+                <li>As a user, I can choose to login via email/password.
+                    <ul>
+                        <li> on "success", the modal will close and the user will be logged in.</li>
+                        <li> on "error", the modal will stay up, and an error message will appear.</li>
+                    </ul>
+                </li>
+                <li> as a user, I can close the modal by clicking the "x"</li>
+                <li> as a user, I can choose to swith to the "register" modal
+                    <ul>
+                        <li>the "login" modal will fade out and the "register" modal will fade in.</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h4 class="text-center col-xs-12">The Register modal</h4>
+            <ul class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <li>As a user, I can register via a social app
+                    <ul>
+                        <li>clicking on the button will launch the site's app to log in</li>
+                        <li>upon successful registration, the modal will close and the user will be logged in</li>
+                        <li>upon error, the error message will display and the user can try again</li>
+                    </ul>
+                </li>
+                <li>as a user, I can register via email/ password/ confirmed password</li>
+            </ul>
+        </div> 
         
         <!-- login div -->
         
