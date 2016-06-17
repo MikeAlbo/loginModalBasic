@@ -48,7 +48,7 @@ $(document).ready(function(){
 
     
     
-    $("#signInButton").on('click', function(){
+    $(".signIn").on('click', function(){
         
         if(loginActive){
             blurBackground();
@@ -72,7 +72,7 @@ $(document).ready(function(){
     
     // register
     
-    $("#registerButton").on('click', function(){
+    $(".register").on('click', function(){
        // do something 
     });
     

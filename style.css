@@ -42,8 +42,8 @@ body {
     box-shadow: 2px 2px 5px 2px rgba(200,200,200,.5);
     background-color: rgba(255,255,255,.95);
     z-index: 2;
-    visibility: hidden;
-    opacity: 0;
+    visibility: hidden; /* init state */
+    opacity: 0;         /* init state */
     
 }
 
@@ -148,4 +148,36 @@ body {
 
 .closeX i:hover {
    color: rgba(50,50,50,.2); 
+}
+
+
+/* ----------------------------------------------------------- */
+/* register div */
+
+#registerDiv {
+    border: 1px solid rgba(200,200,200,.5);
+    padding: 5px;
+    position: fixed;
+    top: 25%;
+    box-shadow: 2px 2px 5px 2px rgba(200,200,200,.5);
+    background-color: rgba(255,255,255,.95);
+    z-index: 2;
+    visibility: "hidden";  /* init state */
+    opacity: 0; /* init state */
+    
+    
+}
+
+/* ------------------------------------------------------- */
+/* registerDiv text */
+
+#registerDiv h3 {
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: .8em;
+    letter-spacing: .1em;
+}
+
+#registerDiv h3 small {
+    font-size: .5em;
 }
