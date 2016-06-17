@@ -18,29 +18,28 @@
         <!-- footer div, with login and register buttons -->
         
         <div class="col-xs-12" id="footerDiv">
-            <p class="col-xs-12 text-center">
+            <p class="col-xs-12 text-center" id="largeFooterText">
                 To comment and save, sign in or create an account.
             </p>
             <div class="col-xs-4 col-xs-offset-4 text-center">
-                <button class="btn btn-default signIn"  >sign in</button>
-                <button class="btn btn-default register" onclick="register()">Register</button>
+                <button class="btn btn-default signIn"  >Sign IN</button>
+                <button class="btn btn-default register">Register</button>
             </div>
             <div class="col-xs-1 col-xs-offset-3 text-center">
-                <button class="btn" id="closeModal">
-                    X
-                </button>
+                <a id="closeFooter"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
             </div>
+
         </div>
         
         <div class="col-xs-12 bodyText">
             <h1 class="text-center">Basic Login Modal using Bootstrap and jQuery</h1>
-            <p class="text-center">a basic login modal with links to social media and the opportunity to login via email and password.</p>
+            <p class="text-center">A basic login modal with links to social media and the opportunity to login via email and password.</p>
             
             <h4 class="text-center col-xs-12">The Footer Modal <br> <small>selecting wether to login or register</small></h4>
             <ul class="col-xs-12 col-sm-6 col-sm-offset-3">
                 <li>As a user, clicking on "sign-in" will launch the login modal.</li>
                 <li>As a user, clicking on "register" will loaunch the register modal.</li>
-                <li>As a user, clicking on the "x" button will close the login/register modal.</li>
+                <li>As a user, clicking on the "x" button will close the login/register fotter.</li>
             </ul>
             
             <h4 class="text-center col-xs-12">The Login Modal</h4>
@@ -86,19 +85,19 @@
             <h3 class="text-center">Login<br><small>with</small></h3>
             
             
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 facebookButton loginButton">
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 facebookButton loginButton" value="login via facebook">
                <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 facebook
             </button>
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 twitterButton loginButton" >
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 twitterButton loginButton" value="loin via Twitter" >
                <i class="fa fa-twitter-square" aria-hidden="true"></i>
                 Twitter
             </button>
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 googleButton loginButton">
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 googleButton loginButton" value="login via google">
                <i class="fa fa-google" aria-hidden="true"></i>
                 Google
             </button>
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 githubButton loginButton">
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 githubButton loginButton" value="login via git hub">
                <i class="fa fa-github-square" aria-hidden="true"></i>
                 Git Hub
             </button>
@@ -120,7 +119,7 @@
             </form>
             <p class="text-center col-xs-12">Need an account? <a class="register">Register</a> </p>
             
-            <a onclick="closeModal()" class="closeX col-xs-12 text-right"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <a class="closeX col-xs-12 text-right closeModal"><i class="fa fa-times" aria-hidden="true"></i></a>
             
         </div>
         
@@ -134,19 +133,19 @@
             <h3 class="text-center">Sign up<br><small>with</small></h3>
             
             
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 facebookButton loginButton">
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 facebookButton loginButton" value="register via facebook">
                <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 facebook
             </button>
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 twitterButton loginButton" >
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 twitterButton loginButton" value="register via twitter">
                <i class="fa fa-twitter-square" aria-hidden="true"></i>
                 Twitter
             </button>
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 googleButton loginButton">
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 googleButton loginButton" value="register via google">
                <i class="fa fa-google" aria-hidden="true"></i>
                 Google
             </button>
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 githubButton loginButton">
+            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 githubButton loginButton" value="register via github">
                <i class="fa fa-github-square" aria-hidden="true"></i>
                 Git Hub
             </button>
@@ -171,7 +170,7 @@
             </form>
             <p class="text-center col-xs-12">Already have an acocunt? <a class="signIn">Sign in</a> </p>
             
-            <a onclick="closeModal()" class="closeX col-xs-12 text-right"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <a class="closeX col-xs-12 text-right closeModal"><i class="fa fa-times" aria-hidden="true"></i></a>
             
         </div>
         
