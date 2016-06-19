@@ -54,6 +54,14 @@ body {
     
 }
 
+.reopenModal{
+    color: rgba(225,225,225,1);
+    font-size: 1.5em;
+    margin-right: 1.8em;
+    position: relative;
+    top: -5px;
+}
+
 
 /* ----------------------------------------------------------- */
 /* login div */
@@ -79,7 +87,8 @@ body {
     margin-bottom: 2px;
     box-shadow: 1px 1px 3px 1px rgba(200,200,200,.5);
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    text-align: left;
 }
 
 .loginButton:hover {
@@ -87,7 +96,9 @@ body {
 }
 
 .loginButton i {
-    padding-right: .5em;
+    margin-right: 1em;
+    padding-left: 1em;
+    font-size: 1.2em
     
 }
 

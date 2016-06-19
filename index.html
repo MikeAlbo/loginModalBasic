@@ -15,14 +15,14 @@
     </head>
     <body>
         
-        <!-- footer div, with login and register buttons -->
+         <!-- ------------------------- footer div ------------------------------------- -->
         
         <div class="col-xs-12" id="footerDiv">
             <p class="col-xs-12 text-center" id="largeFooterText">
                 To comment and save, sign in or create an account.
             </p>
             <div class="col-xs-4 col-xs-offset-4 text-center">
-                <button class="btn btn-default signIn"  >Sign IN</button>
+                <button class="btn btn-default signIn"  >Sign In</button>
                 <button class="btn btn-default register">Register</button>
             </div>
             <div class="col-xs-1 col-xs-offset-3 text-center">
@@ -30,6 +30,8 @@
             </div>
 
         </div>
+        
+         <!-- ------------------------- body text div ------------------------------------- -->
         
         <div class="col-xs-12 bodyText">
             <h1 class="text-center">Basic Login Modal using Bootstrap and jQuery</h1>
@@ -39,68 +41,70 @@
             <ul class="col-xs-12 col-sm-6 col-sm-offset-3">
                 <li>As a user, clicking on "sign-in" will launch the login modal.</li>
                 <li>As a user, clicking on "register" will loaunch the register modal.</li>
-                <li>As a user, clicking on the "x" button will close the login/register fotter.</li>
+                <li>As a user, clicking on the "<i class="fa fa-angle-double-down" aria-hidden="true"></i>" button will minimize the login/register footer.</li>
             </ul>
             
             <h4 class="text-center col-xs-12">The Login Modal</h4>
             <ul class="col-xs-12 col-sm-6 col-sm-offset-3">
-                <li>As a user, I can sign in via social media
+                <li>As a user, I can sign in via social media.
                     <ul>
                         <li>clicking on one of the buttons will launch the apps login page</li>
                     </ul>
                 </li>
-                <li>As a user, I can choose to login via email/password.
+                <li>As a user, I can choose to login via email/password. (via Angular, future version)
                     <ul>
-                        <li> on "success", the modal will close and the user will be logged in.</li>
-                        <li> on "error", the modal will stay up, and an error message will appear.</li>
+                        <li> On "success", the modal will close and the user will be logged in.</li>
+                        <li> On "error", the modal will stay up, and an error message will appear.</li>
                     </ul>
                 </li>
-                <li> as a user, I can close the modal by clicking the "x"</li>
-                <li> as a user, I can choose to swith to the "register" modal
+                <li> As a user, I can close the modal by clicking the "x".</li>
+                <li> As a user, I can choose to swith to the "register" modal.
                     <ul>
-                        <li>the "login" modal will fade out and the "register" modal will fade in.</li>
+                        <li>The "login" modal will fade out and the "register" modal will fade in.</li>
                     </ul>
                 </li>
             </ul>
             
             <h4 class="text-center col-xs-12">The Register modal</h4>
             <ul class="col-xs-12 col-sm-6 col-sm-offset-3">
-                <li>As a user, I can register via a social app
+                <li>As a user, I can register via a social app.
                     <ul>
-                        <li>clicking on the button will launch the site's app to log in</li>
-                        <li>upon successful registration, the modal will close and the user will be logged in</li>
-                        <li>upon error, the error message will display and the user can try again</li>
+                        <li>Clicking on the button will launch the site's app to log in.</li>
+                        <li>Upon successful registration, the modal will close and the user will be logged in.</li>
+                        <li>Upon error, the error message will display and the user can try again.</li>
                     </ul>
                 </li>
-                <li>as a user, I can register via email/ password/ confirmed password</li>
+                <li>As a user, I can register via email/ password/ confirmed password.</li>
             </ul>
         </div> 
         
-        <!-- login div -->
+        <!-- ------------------------- login div ------------------------------------- -->
         
         <div class="col-xs-12 col-sm-4 col-sm-offset-4" id="loginDiv">
             
             
             
-            <h3 class="text-center">Login<br><small>with</small></h3>
+            <h3 class="text-center">Sign In<br><small>with</small></h3>
             
             
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 facebookButton loginButton" value="login via facebook">
+            <div class="col-xs-12 col-sm-6 col-xs-offset-3 buttonGroup">
+            <button class="btn btn-default btn-block facebookButton loginButton" value="login via facebook">
                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                facebook
+                Facebook
             </button>
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 twitterButton loginButton" value="loin via Twitter" >
+            <button class="btn btn-default btn-block twitterButton loginButton" value="loin via Twitter" >
                <i class="fa fa-twitter-square" aria-hidden="true"></i>
                 Twitter
             </button>
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 googleButton loginButton" value="login via google">
+            <button class="btn btn-default  btn-block googleButton loginButton" value="login via google">
                <i class="fa fa-google" aria-hidden="true"></i>
                 Google
             </button>
-            <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 githubButton loginButton" value="login via git hub">
+            <button class="btn btn-default  btn-block githubButton loginButton" value="login via git hub">
                <i class="fa fa-github-square" aria-hidden="true"></i>
                 Git Hub
             </button>
+            </div>
             
             <div class="col-xs-12 loginOrDiv" >
                 <i class="fa fa-caret-left col-xs-4 col-xs-offset-1 text-right" aria-hidden="true"></i>
@@ -130,7 +134,7 @@
             
             
             
-            <h3 class="text-center">Sign up<br><small>with</small></h3>
+            <h3 class="text-center">Register<br><small>with</small></h3>
             
             
             <button class="btn btn-default text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 facebookButton loginButton" value="register via facebook">
@@ -168,11 +172,13 @@
                 </div>
                 <button type="submit" class="btn btn-default col-xs-12">Submit</button>
             </form>
-            <p class="text-center col-xs-12">Already have an acocunt? <a class="signIn">Sign in</a> </p>
+            <p class="text-center col-xs-12">Already have an acocunt? <a class="signIn">Sign In</a> </p>
             
             <a class="closeX col-xs-12 text-right closeModal"><i class="fa fa-times" aria-hidden="true"></i></a>
             
         </div>
+        
+         <!-- ------------------------- load js ------------------------------------- -->
         
         
         <script type="text/javascript" src="main.js"></script>
